@@ -8,5 +8,9 @@ import (
 func main() {
 	var now time.Time = time.Now()
 	var year int = now.Year()
-	fmt.Println(year)
+	month := now.Month()
+	fmt.Println(year, month)
+	//fmt.Println((now.Month()))
+	//fmt.Println((now.Hour()))
+
 }
