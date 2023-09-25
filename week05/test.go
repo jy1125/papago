@@ -27,9 +27,15 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
+
 		inputNumberString = strings.TrimSpace(inputNumberString)
+
 		inputNumber, err := strconv.Atoi(inputNumberString)
-		if inputNumber < answer {
+
+		if inputNumber == answer {
+			fmt.Println(("정답~"))
+			break
+		} else if inputNumber < answer {
 			fmt.Println("Ur guess number is lower ghan answer.") //정답이 더 크다
 		} else if inputNumber > answer {
 			fmt.Println("Ur guess number is higher ghan answer.") //정답이 더 작다
