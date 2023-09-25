@@ -9,6 +9,6 @@ import (
 func main() {
 	fmt.Print("InPut score 입력 : ")
 	reader := bufio.NewReader(os.Stdin)
-	inputScore := reader.ReadString('\n')
+	inputScore, _ := reader.ReadString('\n') //옵션 1
 	fmt.Println((inputScore))
 }
